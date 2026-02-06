@@ -523,7 +523,7 @@
                         <i class="fa fa-lightbulb-o"></i> Key Innovation
                     </h3>
                     <p class="text-align" style="margin-bottom: 0;">
-                        <i>MobileGen introduces capability-aligned GUI data generation by dynamically matching task difficulty to the agent’s capability frontier, continuously pushing learning toward the optimal challenge point.</i>
+                        <i>MobileGen mimics the human learning paradigm of gradual progression by dynamically generating training data that are well aligned with the capability frontier of GUI agents, driving the continual evolution of the agents toward increasingly sophisticated behaviors.</i>
                     </p>
                 </div>
                 <!-- <img src="img/key_finding.gif" alt="Trailblazer Framework Overview" width="100%" style="border: 1px solid var(--border-gray); border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"> -->
@@ -955,7 +955,7 @@
                                 <img src="img/ablation_01.png" alt="Ablation Study" width="90%" style="border: 1px solid var(--border-gray); border-radius: 4px; margin: 10px 0;">
                             </div>
                             <p class="text-align" style="margin-bottom: 0;">
-                                Removing customized difficulty distribution (wo/dist) or disabling difficulty and quality control mechanisms (wo/budget and wo/rollback) consistently leads to performance degradation across benchmarks, highlighting the necessity of all components.
+                                These results reveal that effective GUI agent learning critically depends on jointly modeling difficulty distribution and trajectory quality control.
                             </p>
                         </div>
                     </div>
@@ -966,7 +966,7 @@
                             </h4>
                             <img src="img/point_01.png" alt="Impact of Challenge Point" width="100%" style="border: 1px solid var(--border-gray); border-radius: 4px; margin: 10px 0;">
                             <p class="text-align" style="margin-bottom: 0;">
-                                We evaluate the effect of the challenge point α across a range from α = 0 (trivial) to α = 2 (hard). The results show that overly easy or excessively difficult settings lead to suboptimal learning, highlighting the importance of aligning data generation with the agent’s current capability boundary in our difficulty-aware framework.
+                                This observation suggests that GUI agent training follows a frontier-sensitive learning dynamic, where progress is maximized when the difficulty of generated task trajectories stays near the agent’s evolving capability boundary.
                             </p>
                         </div>
                     </div>
@@ -983,7 +983,7 @@
                 <div class="citation-text">
                     <p style="margin-bottom: 15px; font-size: 16px;"><b>Please cite our work if you find it useful for your research:</b></p>
                     <div class="form-group">
-                        <textarea id="bibtex" class="form-control" rows="8" readonly style="font-family: 'Courier New', monospace; font-size: 8px !important;">
+                        <textarea id="bibtex" class="form-control" rows="8" readonly style="font-family: 'Courier New', monospace; font-size: 12px !important;">
 @misc{kang2026mobilegen,
     title={Learning with Challenges: Adaptive Difficulty-Aware Data Generation for Mobile GUI Agent Training}, 
     author={Linjia Kang and Zhimin Wang and Yongkang Zhang and Duo Wu and Jinghe Wang and Ming Ma and Haopeng Yan and Zhi Wang},
