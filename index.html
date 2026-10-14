@@ -34,14 +34,12 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
       </div>
       <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
-
-          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-custom w3-hover-text-custom w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
-          <a href="#hobbies" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-custom w3-hover-text-custom w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">HOBBIES</a>
-          <a href="#experience" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-custom w3-hover-text-custom w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">EXPERIENCES</a>
-          <a href="#Project" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-custom w3-hover-text-custom w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">PROJECTS</a>
-          <a href="#Education" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-custom w3-hover-text-custom w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">EDUCATION</a>
-          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-custom w3-hover-text-custom w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
-
+          <a href="#about" class="w3-bar-item w3-button" onclick="toggleNavigation()">ABOUT</a>
+          <a href="#research" class="w3-bar-item w3-button" onclick="toggleNavigation()">RESEARCH</a>
+          <a href="#publication" class="w3-bar-item w3-button" onclick="toggleNavigation()">PUBLICATIONS</a>
+          <a href="#experience" class="w3-bar-item w3-button" onclick="toggleNavigation()">EXPERIENCE</a>
+          <a href="#award" class="w3-bar-item w3-button" onclick="toggleNavigation()">AWARDS</a>
+          <a href="#contact" class="w3-bar-item w3-button" onclick="toggleNavigation()">CONTACT</a>
       </div>
 
       <!-- SOCIAL SECTION -->
@@ -68,13 +66,13 @@
         </div>
         <!--CV DOWNLOAD BUTTON-->
         <div class="w3-container w3-padding-10" style="margin-top: 30px;">
-          <a href="cv\cv_en.pdf" class="w3-custom-color w3-hover-custom-color w3-button w3-round-small w3-padding-medium" target="_blank" download="linjia_cv_en_2024.pdf">
+          <a href="cv/cv_en.pdf" class="w3-custom-color w3-hover-custom-color w3-button w3-round-small w3-padding-medium" target="_blank" download="linjia_cv_en.pdf">
             <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
             <span class="w3-margin-left download-text">DOWNLOAD CV</span>
           </a>
         </div>
         <div class="w3-container w3-padding-16" style="margin-top: 10px;">
-          <a href="cv\cv_zh.pdf" class="w3-custom-color w3-hover-custom-color w3-button w3-round-small w3-padding-medium" target="_blank" download="linjia_cv_zh_2024.pdf">
+          <a href="cv/cv_zh.pdf" class="w3-custom-color w3-hover-custom-color w3-button w3-round-small w3-padding-medium" target="_blank" download="linjia_cv_zh.pdf">
             <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
             <span class="w3-margin-left download-text">个 人 简 历</span>
           </a>
@@ -129,15 +127,22 @@
           <div id="about" class="w3-container w3-margin-top-10-percent w3-cursive w3-large">
             <h3 class="w3-border-bottom w3-border-custom-color" style="border-width: 3px !important;">ABOUT ME</h3>
             <p class="w3-margin-top-2">
-              Hi! I am currently a master student at Tsinghua University, advised by <a href="http://zwang.inflexionlab.org/" target="_blank">
+              Hi! I am currently a master's student at Tsinghua University, advised by <a href="http://zwang.inflexionlab.org/" target="_blank">
                 Prof. Zhi Wang</a>. Before that, I obtained my B.Eng. degree in Data Science and Big Data Technology from Huazhong Agricultural University in 2025.
-                I am fortunate to a member of <a href="https://duowuyms.github.io/group/" target="_blank">"LLM Agents & Embodied VLA"</a> group, a small but vibrant research team made up of young, enthusiastic, and deeply committed people. Working alongside them is both a joy and an honor.
+                I am fortunate to be a member of the <a href="https://duowuyms.github.io/group/" target="_blank">"LLM Agents & Embodied VLA"</a> group, a small but vibrant research team made up of young, enthusiastic, and deeply committed people. Working alongside them is both a joy and an honor.
+            </p>
               </div>
 
           <!--Recent News-->
           <div id="news" class="w3-container w3-margin-top-2 w3-cursive w3-large">
             <h3 class="w3-border-bottom w3-border-custom-color" style="border-width: 3px !important;">RECENT NEWS</h3>
               <ul>
+                <li>
+                  <h5>[2026] <sup><font color="red"><b>New!</b></font></sup> Our work <b>GeoMIND</b> on spatial understanding in robotic manipulation has been accepted by <b>NeurIPS 2026</b>!</h5>
+                </li>
+                <li>
+                  <h5>[2026/09] <sup><font color="red"><b>New!</b></font></sup> Our work <b>Seek Before You Move</b> on evidence seeking for vision-language navigation is available as a preprint.</h5>
+                </li>
                 <li>
                   <h5>[2026/06] <sup><font color="red"><b>New!</b></font></sup> Our work <b>DeCoPatch</b> on GUI grounding has been accepted to <b>ECCV 2026</b>! It reveals causal latent subspaces in VLMs and improves GUI grounding through decode-time causal intervention.</h5>
                 </li>
@@ -158,7 +163,7 @@
               <h3 class="w3-border-bottom w3-border-custom-color" style="border-width: 3px !important;">RESEARCH INTERESTS</h3>
           
             <p class="w3-margin-top-2">
-              My research aims to advance LMs as the 'cognitive core' for effective task execution in open-ended worlds. I am particularly interested in <b>GUI Agent</b>, <b>Multi-agent System</b>, and <b>LM Tool Use</b>.
+              My research interests are <b>multimodal understanding</b> and <b>large language model agents</b>, particularly visual grounding, embodied navigation, and GUI interaction.
             </p>
                     
           </div>
@@ -171,20 +176,32 @@
             <p><i><b>Note:</b> Equal contributions are marked by *.</i></p>
             <ul>
               <li>
-                <h5 class="inline"><b>Learning with Challenges: Adaptive Difficulty-Aware Data Generation for Mobile GUI Agent Training</b></h5>
-                <h5><b><i>Under review <font color="red">[CCF-A]</font></i></b> 
-                  <a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="https://arxiv.org/pdf/2601.22781" target="_blank">preprint</a> 
-                  <a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="https://xiaogou1234.github.io/papers/mobilegen/" target="_blank">webpage</a></h5>
-                <h5><b>Linjia Kang*</b>, Zhimin Wang*, Yongkang Zhang*, Duo Wu, Jinghe Wang, Ming Ma, Haopeng Yan, Zhi Wang</h5>
+                <h5 class="inline"><b>GeoMIND: A Benchmark for Spatial Understanding in Robotic Manipulation</b></h5>
+                <h5><b><i>NeurIPS 2026 (Accepted) <font color="red">[CCF-A]</font></i></b></h5>
+                <h5>Jinghe Wang*, Xinrui Cao*, Duo Wu*, Chenghao Gu, Yong Zhong, <b>Linjia Kang</b>, Tianyi Xion, Zhi Wang.</h5>
               </li>
               <li>
                 <h5 class="inline"><b>DeCoPatch: Revealing Causal Latent Subspaces in Vision-Language Models for GUI Grounding</b></h5>
                 <h5>
                   <b><i>ECCV 2026 (Accepted) <font color="red">[THU-A]</font></i></b>
-                  <a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="#" target="_blank">preprint [to be released]</a>
-                  <!-- <a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="#" target="_blank">code [to be released]</a> -->
+                  <a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="https://link.springer.com/content/pdf/10.1007/978-3-032-37359-5_2.pdf" target="_blank" rel="noopener noreferrer">paper</a>
+                  <a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="https://github.com/calmee4/decopatch" target="_blank" rel="noopener noreferrer">repository</a>
                 </h5>
                 <h5>Yongkang Zhang*, <b>Linjia Kang*</b>, Zhimin Wang*, Duo Wu, Zhi Wang</h5>
+              </li>
+              <li>
+                <h5 class="inline"><b>Seek Before You Move: Evidence Seeking for Progress Grounding in Vision-Language Navigation</b></h5>
+                <h5><b><i>Preprint</i></b>
+                  <a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="https://arxiv.org/pdf/2609.37353" target="_blank" rel="noopener noreferrer">paper</a>
+                  <a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="https://zhiminwangss.github.io/seekvln-project/" target="_blank" rel="noopener noreferrer">webpage</a></h5>
+                <h5>Zhimin Wang, Meiyuan Zhu, Duo Wu, <b>Linjia Kang</b>, Yajun Wang, Yuan Ni, Xiaohang Wang, Tianlu Pan, Jingyan Jiang, Yaowei Wang, Zhi Wang.</h5>
+              </li>
+              <li>
+                <h5 class="inline"><b>Learning with Challenges: Adaptive Difficulty-Aware Data Generation for Mobile GUI Agent Training</b></h5>
+                <h5><b><i>Under review <font color="red">[CCF-A]</font></i></b>
+                  <a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="https://arxiv.org/pdf/2601.22781" target="_blank">preprint</a>
+                  <a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="https://xiaogou1234.github.io/papers/mobilegen/" target="_blank">webpage</a></h5>
+                <h5><b>Linjia Kang*</b>, Zhimin Wang*, Yongkang Zhang*, Duo Wu, Jinghe Wang, Ming Ma, Haopeng Yan, Zhi Wang</h5>
               </li>
               <li>
               <h5 class="inline"><b>Large Language Models as Generalist Policies for Network Optimization</b></h5>
@@ -194,22 +211,26 @@
               <li>
                 <h5 class="inline"><b>Collaborative Belief Reasoning with LLMs for Efficient Multi-Agent Collaboration</b></h5>
                 <h5><b><i>Under review <font color="red">[CCF-A]</font></i></b> <a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="https://arxiv.org/abs/2509.21981" target="_blank">preprint</a> 
-                  <!-- <a class="w3-button w3-round-xxlarge w3-small w3-light-blue" href="https://github.com/duowuyms/MANSY_ImmersiveVideoStreaming" target="_blank">code</a></h5> -->
+                </h5>
                 <h5>Zhimin Wang*, Duo Wu*, Shaokang He*, <b>Linjia Kang</b>, Jinhe Wang, Jing Yu, Kai Zhu, Jiawei Li, Zhi Wang.</h5>
               </li>
             </ul>
           </div>
 
           <!--Experience SECTION-->
-          <!-- <div id="experience" class="w3-container w3-margin-top-2 w3-cursive w3-large">
+          <div id="experience" class="w3-container w3-margin-top-2 w3-cursive w3-large">
             <h3 class="w3-border-bottom w3-border-custom-color" style="border-width: 3px !important;">EXPERIENCE</h3>
               <ul>
                 <li>
-                <h4 class="inline">Audio/Video Policy Model Group, Kuaishou Technology, Beijing</h4>
-                <h5>Research Intern, Aug. 2025 - Present.</h5>
-               </li>
+                  <h4 class="inline">Audio/Video Policy Model Group, Kuaishou Technology, Beijing</h4>
+                  <h5>Research Intern, Aug. 2025 – Present</h5>
+                </li>
+                <li>
+                  <h4 class="inline">TeleAI</h4>
+                  <h5>Intern, Present</h5>
+                </li>
             </ul>
-          </div> -->
+          </div>
 
 
           <div id="award" class="w3-container w3-margin-top-2 w3-cursive w3-large">
@@ -269,7 +290,7 @@
         <!--FOOTER-->
         <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
         <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
-          <p>© 2026.01 - Linjia Kang</p>
+          <p>© 2026.10 - Linjia Kang</p>
           <p class="w3-small">Feel free to reach out if you're interested in my research or would like to collaborate!</p>
           <!-- <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.w3schools.com/spaces" target="_blank">Start now</a>  -->
         <!-- End footer -->
