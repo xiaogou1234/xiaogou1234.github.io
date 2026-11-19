@@ -27,8 +27,8 @@
     video.remove();
   }
 
-  frame.addEventListener("pointerenter", async (event) => {
-    if (event.pointerType !== "mouse" || activeVideo) return;
+  async function playOnce() {
+    if (activeVideo) return;
 
     const video = document.createElement("video");
     video.className = "profile-video";
@@ -60,5 +60,15 @@
       return;
     }
     if (activeVideo === video) media.dataset.playing = "";
+  }
+
+  frame.addEventListener("pointerenter", (event) => {
+    if (event.pointerType === "mouse") playOnce();
+  });
+
+  frame.addEventListener("click", (event) => {
+    if (event.pointerType === "touch" || matchMedia("(hover: none)").matches) {
+      playOnce();
+    }
   });
 })();
