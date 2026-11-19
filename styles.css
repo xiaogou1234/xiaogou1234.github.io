@@ -39,8 +39,17 @@ body * {
     --profile-ratio: calc(4 / 3);
     --profile-width-limit: 76%;
     --profile-height-limit: clamp(10rem, 62vh, 27rem);
+    position: relative;
     width: min(var(--profile-width-limit), 20rem, calc(var(--profile-height-limit) * var(--profile-ratio)));
     margin: clamp(1.5rem, 7vh, 4rem) auto 0;
+  }
+
+  .profile-paw {
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + 8px);
+    transform: rotate(-12deg);
+    pointer-events: none;
   }
 
   .profile-frame {
@@ -100,6 +109,12 @@ body * {
   .home {
     width: 80%;
     margin: 0 auto;
+  }
+
+  .home-dog {
+    display: block;
+    margin: 0 auto;
+    pointer-events: none;
   }
   
   .home p {
@@ -262,6 +277,11 @@ body * {
     .home h2 {
       font-size: 24px;
     }
+
+    .home-dog {
+      width: 24px;
+      height: 24px;
+    }
   
     .w3-fixed {
       position: inherit;
@@ -275,6 +295,11 @@ body * {
       --profile-width-limit: 84%;
       --profile-height-limit: 17rem;
       margin-top: 1.5rem;
+    }
+
+    .profile-paw {
+      width: 16px;
+      height: 16px;
     }
 
     .icon-link {
