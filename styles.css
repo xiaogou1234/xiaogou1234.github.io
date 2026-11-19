@@ -25,6 +25,7 @@ body * {
   
   .image-section {
     height: 100vh;
+    overflow-y: auto;
     -moz-text-align: center; /*works on Firefox */
     -webkit-text-align: center; /*works on Safari and Google Chrome*/
     text-align: center;
@@ -34,43 +35,42 @@ body * {
     padding: 20px;
   }
   
-  .image-section img {
-    max-width: 60%;
-    max-height: 60%;
-    margin-top: 50px !important;
-    object-fit: cover;
-    /* 高级边框效果 */
-    padding: 8px;
-    background: linear-gradient(145deg, #ffffff, #e6e6e6);
-    border-radius: 8px;
-    box-shadow: 
-      0 5px 10px rgba(0, 0, 0, 0.3),
-      inset 0 1px 0 rgba(255, 255, 255, 0.6),
-      inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+  .profile-media {
+    --profile-ratio: calc(4 / 3);
+    --profile-width-limit: 76%;
+    --profile-height-limit: clamp(10rem, 62vh, 27rem);
+    width: min(var(--profile-width-limit), 20rem, calc(var(--profile-height-limit) * var(--profile-ratio)));
+    margin: clamp(1.5rem, 7vh, 4rem) auto 0;
+  }
+
+  .profile-frame {
     position: relative;
+    aspect-ratio: var(--profile-ratio);
+    overflow: hidden;
+    background-color: #323131;
+    border-radius: 0.75rem;
+    box-shadow: 0 0 0 4px #fff, 0 10px 24px rgba(0, 0, 0, 0.32);
   }
 
-  .image-section img::before {
-    content: '';
+  .profile-poster,
+  .profile-video {
     position: absolute;
-    top: -4px;
-    left: -4px;
-    right: -4px;
-    bottom: -4px;
-    background: linear-gradient(45deg, #F9F9FF, #d4d4d4, #F9F9FF);
-    border-radius: 10px;
-    z-index: -1;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
-  .image-section img:hover {
-    transform: translateY(-5px);
-    box-shadow: 
-      0 15px 40px rgba(0, 0, 0, 0.4),
-      inset 0 1px 0 rgba(255, 255, 255, 0.7),
-      inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  .profile-video {
+    background-color: #323131;
+    opacity: 0;
+    pointer-events: none;
   }
-  
+
+  .profile-media[data-playing] .profile-video {
+    opacity: 1;
+  }
+
   .links {
     display: flex;
     justify-content: center;
@@ -266,16 +266,12 @@ body * {
       height: auto;
     }
   
-    .image-section img {
-      max-width: 80%;
-      max-height: 80%;
-      /* 移动端优化边框效果 */
-      padding: 6px;
-      box-shadow: 
-        0 8px 20px rgba(0, 0, 0, 0.25),
-        inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    .profile-media {
+      --profile-width-limit: 84%;
+      --profile-height-limit: 17rem;
+      margin-top: 1.5rem;
     }
-  
+
     .icon-link {
       font-size: 24px;
     }
